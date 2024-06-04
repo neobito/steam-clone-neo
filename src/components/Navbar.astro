@@ -1,0 +1,119 @@
+---
+import { Image } from "astro:assets";
+---
+
+<nav class="container">
+  <ul class="login-btn">
+    <li class="bc">
+      <button class="btn-install">Instalar Steam</button>
+    </li>
+    <li><a href="">iniciar sesion</a></li>
+    <li><a href="">|</a></li>
+    <li><a class="select" href="">idioma</a></li>
+  </ul>
+  <div class="nav-steam">
+    <ul class="nav-L">
+      <a href="" class="navL">
+        <img src="logo_steam.svg" alt="" class="navL-img" />
+      </a>
+      <li><a class="hvo">TIENDA</a></li>
+      <li><a href="">COMUNIDAD</a></li>
+      <li><a href="">ACERCA DE</a></li>
+      <li><a href="">SOPORTE</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  nav {
+    background-color: #171d25;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+
+    background-color: #171d25;
+  }
+  .nav-steam {
+    background: #171d25;
+    width: 640px;
+    height: 104px;
+    margin: 0px auto;
+  }
+  .nav-L {
+    background: #171d25;
+    display: flex;
+    gap: 1rem;
+
+    cursor: pointer;
+    margin: 3rem;
+    list-style: none;
+  }
+  .nav-L a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #171d25;
+  }
+
+  .nav-L img {
+    background-color: #171d25;
+    width: 11rem;
+    position: fixed;
+    left: 21%;
+    top: 2rem;
+  }
+  .login {
+    background-color: #171d25;
+  }
+
+  .login-btn {
+    background-color: #171d25;
+    display: flex;
+    gap: 1rem;
+    position: fixed;
+    list-style: none;
+    right: 20%;
+    padding: 0.5rem;
+  }
+
+  .login-btn a {
+    background-color: #171d25;
+    padding: 1rem 0.8rem 0.5rem 0;
+    font-size: 11px;
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.676);
+  }
+
+  .select {
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+    background-position: 30px 15px;
+    background-repeat: no-repeat;
+  }
+  .btn-install {
+    font-size: 11px;
+    font-weight: 100;
+
+    background-position: 10px 4px;
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+    background-repeat: no-repeat;
+    background-color: #6c9018;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.5rem 0.3rem 2rem;
+  }
+  .bc {
+    background-color: #171d25;
+  }
+
+  .hvo {
+    background-color: #1765ea;
+  }
+</style>

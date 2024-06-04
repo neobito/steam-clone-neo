@@ -1,0 +1,82 @@
+---
+
+---
+
+<div class="container">
+  <div class="navsub">
+    <ul class="navDiv">
+      <li>Tu tienda</li>
+      <li>Nuevo y destacable</li>
+      <li>Categorias</li>
+      <li>Tienda de puntos</li>
+      <li>Noticias</li>
+      <li>Laboratorios</li>
+      <input type="text" placeholder="buscar" class="int" />
+      <button class="search"></button>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .navsub {
+    background-color: #2d5075;
+  }
+
+  .navDiv {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    gap: 2rem;
+    color: white;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    background-color: #2d5075;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  }
+  li {
+    margin-top: 0.7rem;
+    padding: 0rem 0rem;
+
+    background-color: #2d5075;
+  }
+
+  .int {
+    border: white;
+    padding: 0.5rem;
+
+    margin: 0.2rem;
+    background-color: #316282;
+  }
+
+  .int::placeholder {
+    padding: 0.5rem;
+    color: #0e1c25;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .search {
+    width: 28px;
+    height: 27px;
+    position: absolute;
+    left: 75%;
+    border: none;
+    background-color: #497ea0;
+    background-position: 1px 1px;
+    top: 14.8%;
+    background-repeat: no-repeat;
+    background-image: url(https://store.akamai.steamstatic.com/public/images/v6/search_icon_btn.png);
+  }
+</style>
